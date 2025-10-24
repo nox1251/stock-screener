@@ -1,6 +1,23 @@
 # Changelog — Stock Screener (Google Sheets + Apps Script)
 
-### 2025-10-24 — Phase 1: Code Cleanup & TypeScript Migration
+### 2025-10-25 — Reverted TypeScript Migration
+
+**Decision: Keep Original JavaScript Files**
+- Attempted TypeScript migration with modular structure
+- Google Apps Script doesn't support ES6 imports/exports natively
+- Reverted to original working .js files
+- All functionality preserved and working correctly
+- TypeScript migration requires build tooling (webpack/rollup) - deferred to future phase
+
+**Current State:**
+- ✅ All original .js files working in Google Apps Script
+- ✅ Menu functions correctly
+- ✅ Ready for production use
+- 📋 TypeScript refactoring documented in REFACTOR_SUMMARY.md for future reference
+
+---
+
+### 2025-10-24 — Phase 1: Code Cleanup & TypeScript Migration (REVERTED)
 
 **Major Refactoring:**
 - ✓ Migrated entire codebase from .js to TypeScript (.ts)
